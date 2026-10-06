@@ -1,4 +1,26 @@
-# VisionGate CI: bounded OpenCV 5 runtime pilot
+# VisionGate CI: bounded OpenCV 5 role/capture pilot
+
+**Current boundary: synthetic mechanism evidence only, not autonomous production safety.**
+Fresh R02 paired300case validation completed on nativeOpenCV5.0.0:8new controls
+passed,300/300first actions and300/300final decisions correct, zero critical
+unsafe recommendations and zeroUNKNOWN. The unmodified old controller on the
+same fresh images had102/300first actions correct and18unsafe recommendations.
+Newpolicy p95=.386s (oldcontroller .185s); all original acceptance gates passed.
+See `ROLE_R02_SUMMARY.json` and the frozen `ROLE_PROTOCOL_R02.md`.
+
+All baselines declare the same three protected roles before perturbation,
+reference-image hash bound; the controller checks protected pixel changes and
+distributed capture quality before choosing actual recapture/region/block tools.
+Declarations are owner-authored, not independently attested DOM semantics.
+Recapture is pre-captured synthetic input, not live browser or AWS execution.
+The generator family is known to the same author, with procedural label
+separation only, not an external/cryptographically blind real-world benchmark.
+This is a combined-role/capture comparison, not individual causal attribution.
+New localization uses effective recapture images; old initial-image F1 is not
+a like-for-like localization delta. No production release, entry or award.
+No R01bad case, source, or threshold was changed to rescue this result.
+
+## Preserved R01 failure and R00 runtime history
 
 **Safety status: do not use this prototype for autonomous release decisions.**
 The separate300case stress R01 produced56% action accuracy and33unsafe release
