@@ -129,6 +129,7 @@
   "prediction_commitment_sha256": "312939218f1556ffe4f945bab0646feb05d1c013cbbd514c36105b994c6ca4fe",
   "source_unchanged": true,
   "native_job_id": 112058666371,
+  "generation_seed_exact_decimal_disclosed_after_prediction": "17047834858564554531",
   "native_run_conclusion": "success_not_quality_pass",
   "native_receipt_sha256": "68916401ca7e33649e8f2a13bc6df834e063ff739e55c4222dc4f3779e9f04f1",
   "raw_log_bytes": 135145,
