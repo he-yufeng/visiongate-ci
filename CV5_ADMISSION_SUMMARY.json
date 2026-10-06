@@ -1,0 +1,122 @@
+{
+  "scope": "REAL_OPENCV5_RUNTIME_AND_CONDITIONAL_SANDBOX_TOOL_DESIGN_ADMISSION_NOT_COMPETITION_RESULT",
+  "status": "LOCAL_DESIGN_RUNTIME_PASS",
+  "source_commit": "60ddc72b7951ce6fb2cf7b7746038ac5861245ca",
+  "run_id": "37394764780",
+  "runtime": {
+    "build_information_sha256": "f9e8b134d959d53693b03bed638d2005fed05627a1cd1e3277f5abd89ef56149",
+    "machine": "x86_64",
+    "native_binary_sha256": {
+      "cv2.abi3.so": "a9bf3fc4af7f790192c444dfbaff6ece1c44b2e354675381aa722ad38ad8f0cb"
+    },
+    "numpy": "2.2.6",
+    "opencv_distribution": "5.0.0.93",
+    "opencv_native_version": "5.0.0",
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "agent": {
+    "action_accuracy": 1,
+    "action_correct": 60,
+    "calls": {
+      "inspect_pair": 60,
+      "inspect_region": 20,
+      "request_human_approval": 20,
+      "rerun_visual_test": 20,
+      "set_deploy_gate_blocked": 20
+    },
+    "cases": 60,
+    "recapture_source": "pre_captured_synthetic_images_not_live_browser",
+    "sandbox_gate_only_not_real_deployment": true,
+    "trace_sha256": "adc1d725a4c90c1c853f377a85a670463edd4175a976bd04004eec8017d4aa42"
+  },
+  "wall_seconds": 34.70492695,
+  "new_boundary_controls_passed": 4,
+  "input_manifest_sha256": "f10c4a2406205cbd48e9a474657ce754550cad37aaf2077955e8bdab73f99ae7",
+  "fresh_generated_inputs_not_old_opencv4_byte_comparison": true,
+  "competition_ready": false,
+  "aws_deployed": false,
+  "official_score": null,
+  "award": null,
+  "frozen_source_unchanged": true,
+  "performance": {
+    "gates": [
+      {
+        "id": "fixture_schema",
+        "observed": 60,
+        "required": 60,
+        "status": "PASS"
+      },
+      {
+        "diagnostic_observed": 1,
+        "id": "visual_localization_macro_f1",
+        "observed": 1,
+        "required_min": 0.85,
+        "status": "PASS"
+      },
+      {
+        "diagnostic_observed": 1,
+        "id": "agent_action_accuracy",
+        "observed": 1,
+        "required_min": 0.9,
+        "status": "PASS"
+      },
+      {
+        "diagnostic_observed": 1,
+        "id": "nuisance_false_positive_reduction",
+        "observed": 1,
+        "required_min": 0.3,
+        "status": "PASS"
+      },
+      {
+        "artifact_bytes_observed": 2433438,
+        "artifact_bytes_required_max": 104857600,
+        "diagnostic_p95_seconds_run1": 0.16775784,
+        "diagnostic_p95_seconds_run2": 0.166968295,
+        "id": "cpu_efficiency_and_artifact_size",
+        "observed_p95_seconds": 0.16775784,
+        "required_p95_seconds_max": 2,
+        "status": "PASS"
+      },
+      {
+        "evidence_run1_sha256": "fb90b2f55431a420105fee8a48de5cf08be84d9bccee2aa7d4cc8366e44ea5d2",
+        "evidence_run2_sha256": "fb90b2f55431a420105fee8a48de5cf08be84d9bccee2aa7d4cc8366e44ea5d2",
+        "id": "evidence_reproducibility",
+        "required_equal": true,
+        "status": "PASS"
+      }
+    ],
+    "passed": 6,
+    "required": 5,
+    "total": 6
+  },
+  "hard_gates": {
+    "required_opencv_major": {
+      "id": "required_opencv_major",
+      "observed": "5.0.0",
+      "required_major": 5,
+      "status": "PASS"
+    },
+    "unknown_and_critical_fail_closed": {
+      "critical_unsafe_release_count": 0,
+      "status": "PASS",
+      "unknown_fail_closed_count": 0,
+      "unknown_total_count": 0
+    }
+  },
+  "legacy_status": "FAIL_CLOSED",
+  "legacy_decision": "BLOCKED",
+  "native_job_id": 112047988093,
+  "native_run_conclusion": "success",
+  "native_receipt_sha256": "4fa1e511dd673c156163fdb580adc18b3147a038cb0f6018612e2de925b32be7",
+  "raw_public_log_bytes": 22465,
+  "raw_public_log_sha256": "e9ac32b4f046f906202689e68a749c5b144a5e06460e6b6be3140b87860db6d0",
+  "independent_readback_sha256": "7db64662fe4dbdf6e76c395d7a8984b0c3b50b412f3f6330c3ae1de5bf0d4658",
+  "source_and_aggregate_verified_once_without_native_rerun": true,
+  "workflow_id": 375926650,
+  "workflow_state_verified": "disabled_manually",
+  "new_paid_service_or_commitment_cny": 0,
+  "private_original_artifacts_modified_or_published": false,
+  "next_gate": "Independent unavailable-label harder holdout>=300cases before AWS planning/actualcloudsafeguards. Registration/platformlegal and judgevideo/report separate. This is not a claimed award or readiness.",
+  "limits": "Known generator and newly rendered design inputs, not blind generalization or a byte-matched OpenCV4 comparison. Runtime wheel/native-binary, per-case image/evidence/trace bytes stayed in the runner; recovered metadata and aggregates only. Sandbox blocks never release production; rerun uses pre-captured synthetic input, not live capture. No AWS execution, contest entry, official score or award."
+}
