@@ -1,0 +1,17 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {"headless": true, "channel": "chrome"},
+    "contextOptions": {
+      "viewport": {"width": 1920, "height": 1080},
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "colorScheme": "light",
+      "serviceWorkers": "block"
+    }
+  },
+  "outputDir": "cli",
+  "outputMode": "file",
+  "timeouts": {"action": 5000, "navigation": 15000}
+}

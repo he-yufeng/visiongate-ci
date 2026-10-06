@@ -1,0 +1,8 @@
+{
+  "name": "visiongate-ci-owned-browser-pilot",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "@playwright/cli": "0.1.22"
+  }
+}
