@@ -197,7 +197,7 @@
     "raw_log_sha256": "abf8d31127a470d851d0c525d32e06ab62007957b95f0f71b20c65112b8578bb",
     "independent_source_readback_sha256": "61d61ec6c1aa0e3f95848ce76b7cd5df69bd15c6a03c6192a670a091a27f5878",
     "failure_preserved": true,
-    "no_complete_quality_score": null
+    "complete_quality_score": null
   },
   "all36reportedscalars_DOMrole_sets_breakdowns_p95_and33sourcehashes_reconciled": true,
   "actual_png_DOM_metadata_fulltrace_file_bytes_independently_retrieved": false,
