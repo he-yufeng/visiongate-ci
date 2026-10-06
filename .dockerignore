@@ -1,0 +1,8 @@
+*
+!cloud/
+!cloud/**
+!contracts/
+!contracts/**
+!visiongate_ci/
+!visiongate_ci/**
+!cv5-requirements.txt

@@ -1,0 +1,25 @@
+name: Frozen private Lambda API offline RIE R04
+on:
+  push:
+    branches: [pilot/lambda-runtime-20261006-r04]
+    paths: [cloud/handler.py, cloud/smoke_client.py, cloud/Dockerfile, cloud/bounded_deployment_contract.json, tools/native_lambda.py, LAMBDA_PROTOCOL_R04.md, LAMBDA_SOURCE_MANIFEST.json, .github/workflows/lambda-r04.yml]
+permissions:
+  contents: read
+concurrency:
+  group: lambda-r04-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  runtime:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - name: One offline official-Lambda-runtime API validation and cleanup
+        run: python -B tools/native_lambda.py
