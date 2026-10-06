@@ -45,10 +45,10 @@
     "browser/playwright-cli.json": "d5284a826db1cb3300ae3dea5e0a50335bafa9ec43b7aa350682bbdb6452714c",
     "tools/browser_cli.sh": "acdfcf48e3f7f20ed6a9d4f69b403e252f64b91e0961564079bc441a0a9c9cc4",
     "tools/owned_web_fixtures.py": "5d953bd8c2ab5648709a01c47161f6d9be19c4504812bc4af0146c692d373ffa",
-    "tools/live_browser_adapter.py": "e38f2b3143acea4e52743147d2015e197b08c5aba30ecbf9d53b00e98e1c9cee",
+    "tools/live_browser_adapter.py": "d10c3322fccf96ef78c593621f6e0504decabd32975a59f3401a63c2dd9355c8",
     "tools/predict_browser.py": "846cc5dd2e680216adf83fb26168b4e7c36c4a69963bfdd73e434277690011d7",
     "tools/native_browser.py": "8a59f0208e914f03e60251cb40e3a1a7b3d8013894535327fb6d4ce864cef70e",
-    "BROWSER_PROTOCOL_R03.md": "8138e0aab69c54d6546483d6a7dc115b77abf679ff7ee549d7a82618d94f47d6",
+    "BROWSER_PROTOCOL_R03.md": "6fc239ddf401d91c01a07c46dde36891ff0ffac8084eb5ee94ffa927a31e71ca",
     ".github/workflows/browser-r03.yml": "b4506ffff6c0344b7af27890726cd51a2d29d00e90671828b61276f28b07c2af"
   }
 }

@@ -19,8 +19,12 @@ class BrowserClient:
         self.command_records=[]
     def command(self,*args):
         start=time.monotonic()
-        value=subprocess.run([str(self.root/"tools/browser_cli.sh"),"-s="+self.session,
-            "--config="+str(self.config),*args],cwd=self.out,capture_output=True,text=True,timeout=30)
+        command=[str(self.root/"tools/browser_cli.sh"),"-s="+self.session]
+        # CLI0.1.22 accepts configuration only on open. The named session
+        # retains it; goto/snapshot/run-code/close reject that option.
+        if args[0]=="open":
+            command.append("--config="+str(self.config))
+        value=subprocess.run([*command,*args],cwd=self.out,capture_output=True,text=True,timeout=30)
         self.command_records.append({"command":args[0],"exit_code":value.returncode,"seconds":time.monotonic()-start})
         if value.returncode:
             raise RuntimeError("Owned CLI command failed: "+value.stderr[-1800:]+value.stdout[-1800:])

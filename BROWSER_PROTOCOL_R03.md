@@ -60,3 +60,12 @@ fallback install if stock Chrome absent. No paidrunner/cache/artifact/AWS/modelA
 Archive execution/quality failure, stop exact workflow, no after-outcome constants
 or badcase removal. Real external coverage, AWS cost/stop/teardown, registration,
 report and judge demo/video still remain separate and unproven.
+
+## Preserved startup-interface failure,not a quality rescue
+
+Initial source2f51cbec/job112080210312 failed before complete capture/score,
+CLI0.1.22 rejected --config on goto and close. Raw receipt/source kept and
+workflow stopped. The concrete interface repair passes --config only on open;
+the named session retains it thereafter. No role/vision/generator/dependency,
+case count,350ms/timing/resource/acceptance constants changed. A new-source
+cohort may run after this repair; no unchanged-source retry or quality tuning.
