@@ -1,0 +1,186 @@
+{
+  "scope": "ACTUAL_OFFLINE_OFFICIAL_LAMBDA_BASE_RIE17_CONTROL_PASS_NOT_AWS_SERVICE_DEPLOYMENT",
+  "status": "OFFLINE_LAMBDA_RIE_PASS",
+  "run_id": "37410311485",
+  "source_commit": "d0c7d3fe8659016510b91bda8b758a1d4f25a618",
+  "base_image_digest_used": "public.ecr.aws/lambda/python@sha256:517bcc7dc1a3ba62e324961c1563cc54a2bd6dc1060188f9d376211ecb7b2926",
+  "image_id": "sha256:b4752417a74c7f429909d624cc2f9aa4e14e0b30d89f44614c572829a5fd6aaf",
+  "image_bytes": 737310347,
+  "actual_container_runtime": {
+    "distribution": "5.0.0.93",
+    "machine": "x86_64",
+    "numpy": "2.2.6",
+    "opencv": "5.0.0",
+    "python": "3.12.15"
+  },
+  "new_controls_passed": 17,
+  "new_RIE_API_controls": {
+    "controls": [
+      {
+        "action": "rerun_visual_test",
+        "name": "initial-clear-requires-live-recapture",
+        "passed": true,
+        "release_recommended": false,
+        "status": "DECIDED"
+      },
+      {
+        "action": "rerun_visual_test",
+        "name": "signed-clear-recapture-can-recommend",
+        "passed": true,
+        "release_recommended": true,
+        "status": "DECIDED"
+      },
+      {
+        "action": "inspect_region",
+        "name": "minor-executes-real-ROI-inspection",
+        "passed": true,
+        "release_recommended": false,
+        "status": "DECIDED"
+      },
+      {
+        "action": "set_deploy_gate_blocked",
+        "name": "single-protected-pixel-cannot-be-waived",
+        "passed": true,
+        "release_recommended": false,
+        "status": "DECIDED"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "missing-continuation",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "forged-continuation",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "cross-case-token",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "changed-role-binding-token",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "image-byte-hash-mismatch",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "PNG-dimensions-before-allocation",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "nonopaque-alpha",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "no-scoring-label-event-field",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "incomplete-required-DOM-role-set",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "caller-cannot-extend-environment-lease",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "request_human_approval",
+        "name": "encoded-image-byte-bound",
+        "passed": true,
+        "release_recommended": false,
+        "status": "UNKNOWN"
+      },
+      {
+        "action": "rerun_visual_test",
+        "name": "same-binding-token-replay-not-claimed-single-use",
+        "passed": true,
+        "release_recommended": true,
+        "status": "DECIDED"
+      }
+    ],
+    "http_interface": "localAWSRIE_not_cloud",
+    "passed": 16,
+    "tokens_or_images_logged": false,
+    "total": 16
+  },
+  "separate_expired_environment_control": {
+    "expired_lease_refused": true,
+    "production_blocked": true
+  },
+  "owned_local_container_cleanup": [
+    {
+      "container_id": "2a5aee976a916df1487e82a974331f556a6004ffc38ef5e5853b15f75db10b4b",
+      "owned_container_removed": true
+    },
+    {
+      "container_id": "f61377f24ce364d4a4fad2460e0ccc0ba3589ad38f54fea4a8f0cd186c2cce4a",
+      "owned_container_removed": true
+    }
+  ],
+  "network_disabled": true,
+  "filesystem_readonly": true,
+  "local_container_memory_bytes": 2147483648,
+  "local_container_CPUs": 1,
+  "source_unchanged": true,
+  "wall_seconds": 20.408168069,
+  "real_IAM_concurrency_watchdog_teardown_verified": false,
+  "aws_account_or_resource_calls": 0,
+  "registry_pushes": 0,
+  "native_job_id": 112097049277,
+  "native_receipt_sha256": "ba84d985bda7b2907873b609f030f3ec90d4e93ab3af9ca278cb035a8bcccc30",
+  "raw_log_bytes": 21553,
+  "raw_log_sha256": "87fd22b1494a64f71ab695b4b35149250b50e4296426776d34a44a1ad44278e7",
+  "independent_source_scalar_readback_sha256": "20d4ba4aa51c298dd2028a40c26a3b6c180bfe8fbd3d164ca39d5cf1e16cc88b",
+  "source_inputs": 41,
+  "previous33source_inputs_unchanged": true,
+  "workflow_id": 376016685,
+  "workflow_state_verified": "disabled_manually",
+  "actual_container_image_bytes_independently_retrieved_or_rebuilt": false,
+  "Docker_or_API_workload_reexecuted_for_evidence": false,
+  "live_AWS_deployed": false,
+  "real_AWS_identity_region_quota_pricing_verified": false,
+  "real_cloud_concurrency_zero_or_teardown_proved": false,
+  "budget_alert_is_immediate_monetary_hard_limit": false,
+  "application_lease_is_AWS_billing_or_IAM_off_switch": false,
+  "continuation_tokens_are_single_use_or_global_request_quota": false,
+  "production_gate_always_blocked": true,
+  "private_caller_image_or_DOM_semantics_not_independently_authenticated": true,
+  "registered_or_formal_submitted": false,
+  "competition_ready": false,
+  "official_score": null,
+  "award": null,
+  "new_paid_service_or_commitment_cny": 0,
+  "decision": "ADMIT_OFFLINE_DEPLOYMENT_PAYLOAD_API_AND_VENDOR_RUNTIME_ONLY. AWS service execution/account/region/rates/IAM/concurrency/watchdog/storage cleanup/billing remain unproven; do not count RIE as meaningful deployed AWS competition component.",
+  "next_action": "Implement bounded private live controller only under verified account/region/pricing/quota and scoped invocation; stop exact owned resources with independent expiry watchdog and readback. Current account route unavailable; do not repeat known passed cohorts or invent credentials/payment/profile assumptions."
+}

@@ -1,4 +1,24 @@
-# VisionGate CI: bounded OpenCV 5 live-sensor pilot
+# VisionGate CI: bounded OpenCV 5 live-sensor / private-API pilot
+
+**AWS-stage boundary: deployment payload tested offline, NOT deployed in AWS.**
+R04adds a strict two-stage image API on the digest-resolved officialAWS Lambda
+Python3.12base. ActualCV5.0.0/NumPy2.2.6 ran on Python3.12.15 through localRIE:
+16new byte/role/continuation API controls plus an expired-env control passed.
+The builtimage was737,310,347bytes; two exact newly-created local containers
+were removed. No AWS account/resource call, private ECR push or billing.
+See `LAMBDA_R04_SUMMARY.json`, `LAMBDA_PROTOCOL_R04.md`, and `cloud/handler.py`.
+
+Recapture continuations bind case/reference/roles/deadline; rawimage dimensions,
+bytes/opacity/hash and strict fields are checked. Tokens are not single-use or
+a cross-reset global quota. Local lease rejection cannot stop AWS billing/IAM.
+Real account/region/rates,privateIAM,reservedconcurrency/timeout,expirywatchdog,
+exactresource teardown and cost readback remain unverified. AWS Budgets alerts
+can be delayed and must not be marketed as instantaneous monetary caps.
+No source/perception threshold from the prior33inputs changed or passed cohort
+was rerun merely for evidence. The actual Dockerimage bytes were not retrieved
+or independently rebuilt; source and reported API/control scalars were checked.
+
+## Preserved owned-web live-sensor integration
 
 **Current boundary: owned controlled-web integration, not production autonomy or a competition result.**
 R03 now uses real isolated hosted-runner Chrome154 through pinned Playwright CLI.
