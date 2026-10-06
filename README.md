@@ -1,4 +1,31 @@
-# VisionGate CI: bounded OpenCV 5 role/capture pilot
+# VisionGate CI: bounded OpenCV 5 live-sensor pilot
+
+**Current boundary: owned controlled-web integration, not production autonomy or a competition result.**
+R03 now uses real isolated hosted-runner Chrome154 through pinned Playwright CLI.
+Stable baseline DOM rectangles/roles bind to actual reference screenshots.
+An input-reader adapter leaves all22R02sources unchanged and invokes a new browser
+screenshot only when the visual policy selects recapture; rerun images do not
+exist beforehand. The inherited trace sensor tag is explicitly corrected by
+the adapter, not a claim that the old controller originally implemented a browser.
+
+Actual36new ownedHTMLcases:36/36first actions and36/36final decisions correct,
+zero critical unsafe recommendations/UNKNOWN;24conditional live recaptures,
+6integration controls and13gates passed. p95vision-compute excluding sensor I/O
+was.261s, decision cycle including recapture1.228s, full initial acquisition
+4.771s. These timing scopes and inputs are not an R02speedup comparison.
+Transient UI changes settle naturally; persistent regressions are never reset.
+Initial --config startup-interface failure is preserved; only CLI parameter
+placement was repaired, no original vision thresholds or cases were removed.
+See `BROWSER_R03_SUMMARY.json` and `BROWSER_PROTOCOL_R03.md`.
+
+Owner annotations are observed DOM provenance, not independently verified
+business semantics. Known-author controlled fixtures are not external/customer
+validation; live temporal repeat-hash is not re-proven. No user browser/profile,
+private website, image upload, AWS deployment, entry, official score or award.
+All PNG/snapshot/full trace files stay in the ephemeral runner; only source and
+reported per-case scalar/DOM-role/breakdown arithmetic was independently checked.
+
+## Preserved R02 synthetic mechanism result
 
 **Current boundary: synthetic mechanism evidence only, not autonomous production safety.**
 Fresh R02 paired300case validation completed on nativeOpenCV5.0.0:8new controls
