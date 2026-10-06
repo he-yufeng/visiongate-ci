@@ -1,0 +1,66 @@
+{
+  "schema_version": "visiongate-ci-eval/v1",
+  "project": "VisionGate CI",
+  "seed": 20260830,
+  "dataset_contract": {
+    "source": "Project-authored deterministic synthetic UI geometry; no external image assets",
+    "fixture_revision": "visiongate-synthetic-ui/v1",
+    "rights_basis": "internal evaluation artifacts generated from geometric primitives by project code",
+    "initial_pairs": 60,
+    "strata": {
+      "clean_or_nuisance": 20,
+      "minor_regression": 20,
+      "critical_regression": 20
+    },
+    "max_initial_artifact_bytes": 104857600
+  },
+  "agent_contract": {
+    "max_steps": 4,
+    "allowed_actions": [
+      "rerun_visual_test",
+      "inspect_region",
+      "set_deploy_gate_blocked",
+      "request_human_approval"
+    ],
+    "unknown_policy": "fail_closed",
+    "critical_release_authority": "human_only"
+  },
+  "metrics": {
+    "visual_localization": {
+      "match_iou_threshold": 0.5,
+      "macro_f1_min": 0.85
+    },
+    "decision_safety": {
+      "action_accuracy_min": 0.9,
+      "critical_unsafe_release_max": 0
+    },
+    "adaptive_value": {
+      "nuisance_false_positive_relative_reduction_min": 0.3
+    },
+    "efficiency_reproducibility": {
+      "input_resolution": "1920x1080",
+      "local_cpu_p95_seconds_max": 2.0,
+      "repeat_runs": 2,
+      "evidence_content_hashes_must_match": true
+    }
+  },
+  "budget_contract": {
+    "proposal_gate_cny_max": 0,
+    "implementation_monthly_envelope_cny_max": 300,
+    "aws_budget_alert_cny": 200,
+    "paid_model_api_allowed_in_gate": false,
+    "aws_deployment_allowed_in_gate": false
+  },
+  "go_no_go": {
+    "hard_gates": [
+      "live_public_proposal_path_receipt_passed",
+      "account_region_and_team_eligibility_confirmed",
+      "projected_aws_cost_within_envelope_and_teardown_verified",
+      "submission_ip_inventory_passed",
+      "zero_critical_unsafe_release_and_unknown_fail_closed"
+    ],
+    "performance_gates_required": 5,
+    "performance_gates_total": 6,
+    "current_decision": "CONDITIONAL_GO_LOCAL_BUILD_ALLOWED_EXTERNAL_ACTION_BLOCKED"
+  }
+}

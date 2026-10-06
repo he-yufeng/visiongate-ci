@@ -1,0 +1,27 @@
+{
+  "scope": "VISIONGATE_CV5_FIRST_NATIVE_RUNTIME_AND_REAL_SANDBOX_TOOL_PILOT",
+  "inputs": {
+    "visiongate_ci/__init__.py": "ef59386eff6daa559320c9632c6c186b8105eca8a98527e2fd833f68a74e70d6",
+    "visiongate_ci/canonical.py": "6bb89e137084b2d4f4ce0895a233770a8285c4f2ca821b5b49af9bd25202f0dd",
+    "visiongate_ci/fixtures.py": "abe40220ed95a00659eb904914ee9824da060be2381ed023f8c0519b0dc9480f",
+    "visiongate_ci/perception.py": "bf2bcdf82cdf27605d567cd5ecce61c6bde8a70e1cae3ef9a1dbeee26cad2504",
+    "visiongate_ci/gate.py": "9e92e5a5498778f9793af2ad3cec2b700a668c30b123f17f5ccd5552395fef7e",
+    "visiongate_ci/agent_loop.py": "e8105e6e27baa4ae9e0ef0157ea9351ba4456c3d42af1b0ddfd98f388d42d78c",
+    "contracts/local_baseline_contract.json": "507f311a23f8e1a1e9d5bacac917dcde3176655ca3eaaa2f7991cc92ea724d81",
+    "evaluation_contract.json": "fa7119771053de7ae7c0afb758d6cbcf910120860328a24a1a9be0fdb9e6153d",
+    "cv5-requirements.txt": "16eb43e3cf1da4cc1b10cb99eb671bb36b628cd025e1e6a9bb88ce9f00e5043a",
+    "tools/native_cv5_probe.py": "917dd5f66fad8e0189341279848a2c012df7331bc2ad8a687cc3b6d8746988f3",
+    ".github/workflows/cv5-pilot.yml": "e83e01e8a6d7681bcd5df6de1f4f043fd44cdd229b4c721e7dc8e318ace1f612",
+    "README.md": "d463e99002c4e9f235ac8ee59cc982587dd94faefee1a0ff72aa35c54a9424a6",
+    "CV5_PILOT_PROTOCOL.md": "aa75e23a1f2e13181565838ae7d3c0f0aa9db1ceddf47ae36755cb7aa8c511c7",
+    ".gitignore": "d644f368b8034581f7c822586d1700030a14ec79a157da8a9541f8bbee69ab56"
+  },
+  "opencv_wheel_sha256": "09a872a157c1376ab922a69bbf22f9a95bcc7b658a9d8b436a60212b02b2eeb4",
+  "numpy_wheel_sha256": "fd83c01228a688733f1ded5201c678f0c53ecc1006ffbc404db9f7a899ac6249",
+  "original_design_seed": 20260830,
+  "new_legacy_perception_threshold_changes": false,
+  "images_or_private_fixtures_published": false,
+  "aws_actions_allowed": false,
+  "paid_actions_allowed": false,
+  "official_metric_or_award_claim_allowed": false
+}

@@ -1,0 +1,31 @@
+name: Bounded genuine OpenCV5 runtime and conditional tool pilot
+on:
+  push:
+    branches: [pilot/cv5-runtime-20261006-r00]
+    paths: [visiongate_ci/**, tools/native_cv5_probe.py, CV5_SOURCE_MANIFEST.json, contracts/**, evaluation_contract.json, cv5-requirements.txt, .github/workflows/cv5-pilot.yml]
+permissions:
+  contents: read
+concurrency:
+  group: cv5-pilot-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PIP_NO_CACHE_DIR: "1"
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: "3.12"
+      - name: Exact official wheels only
+        run: python -m pip install --no-deps --require-hashes -r cv5-requirements.txt
+      - name: One full new-runtime design and real tool execution probe
+        run: python -B tools/native_cv5_probe.py

@@ -1,0 +1,45 @@
+{
+  "actions": {
+    "critical_regression": "set_deploy_gate_blocked",
+    "minor_regression": "inspect_region",
+    "nuisance": "rerun_visual_test",
+    "unknown": "request_human_approval"
+  },
+  "determinism": {
+    "evidence_repeat_runs": 2,
+    "opencv_opencl_allowed": false,
+    "seed": 20260830
+  },
+  "fixture_contract": {
+    "artifact_license_basis": "project-authored deterministic geometric primitives; no external image assets; internal evaluation only",
+    "generator_revision": "visiongate-synthetic-ui/v1",
+    "height": 1080,
+    "image_format": "png",
+    "initial_pairs": 60,
+    "png_compression": 9,
+    "strata": {
+      "clean_or_nuisance": 20,
+      "critical_regression": 20,
+      "minor_regression": 20
+    },
+    "width": 1920
+  },
+  "perception": {
+    "alignment_downsample": 4,
+    "alignment_response_min": 0.1,
+    "border_ignore_pixels": 8,
+    "critical_changed_fraction_min": 0.008,
+    "false_positive_pixel_fraction": 0.0005,
+    "lab_difference_threshold": 12,
+    "max_alignment_translation_pixels": 6,
+    "minimum_component_area_pixels": 80,
+    "no_change_fraction_max": 0.0005
+  },
+  "pipeline_revision": "visiongate-ci-local-baseline/2026-08-30.1",
+  "runtime_contract": {
+    "development_diagnostic_opencv_version": "4.13.0",
+    "required_opencv_major": 5,
+    "version_mismatch_policy": "UNKNOWN_FAIL_CLOSED"
+  },
+  "schema_version": "visiongate-ci-local-baseline/v1"
+}
