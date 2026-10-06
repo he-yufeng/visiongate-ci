@@ -1,0 +1,13 @@
+{
+  "schema": "visiongate-baseline-role-policy/v1",
+  "required_roles": ["primary_deploy", "secondary_deploy", "critical_warning"],
+  "pixel_difference_threshold": 8,
+  "protected_changed_pixels_min": 1,
+  "capture_quality_grid": [6, 8],
+  "capture_quality_tile_changed_pixels_min": 80,
+  "capture_quality_distributed_tiles_min": 6,
+  "unknown_policy": "blocked_human_review",
+  "baseline_authority": "owner_declared_reference_hash_bound_not_independently_attested",
+  "max_tools": 4,
+  "production_release_allowed": false
+}
