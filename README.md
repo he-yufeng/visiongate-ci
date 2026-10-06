@@ -1,5 +1,12 @@
 # VisionGate CI: bounded OpenCV 5 runtime pilot
 
+**Safety status: do not use this prototype for autonomous release decisions.**
+The separate300case stress R01 produced56% action accuracy and33unsafe release
+recommendations for small critical icon deletions. No production release took
+place because this is a permanently blocked sandbox. See
+`STRESS_R01_SUMMARY.json`; cloud/contest readiness remains blocked. The R00
+60case design success below is historical, not blind generalization.
+
 Participant-owned prototype for reproducible image-driven release-gating tools.
 Not a registered competition entry, official score, AWS deployment or award.
 

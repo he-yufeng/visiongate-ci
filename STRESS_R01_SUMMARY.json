@@ -1,0 +1,150 @@
+{
+  "scope": "ACTUAL300CASE_SYNTHETIC_STRESS_FAILURE_BLOCKS_CLOUD_NOT_OFFICIAL_RESULT",
+  "status": "STRESS_FAIL",
+  "source_commit": "5df2d8cb8b058ba8f0654e812c05d20deea23ad5",
+  "run_id": "37398065982",
+  "runtime": {
+    "numpy": "2.2.6",
+    "opencv": "5.0.0",
+    "opencv_distribution": "5.0.0.93",
+    "platform": "Linux x86_64",
+    "python": "3.12.14"
+  },
+  "cases": 300,
+  "positive_localization_cases": 200,
+  "action_correct": 168,
+  "action_accuracy": 0.56,
+  "localization_macro_f1": 1,
+  "nuisance_before": 100,
+  "nuisance_after": 0,
+  "nuisance_reduction": 1,
+  "p95_seconds": 0.227511376,
+  "output_bytes": 74425069,
+  "critical_unsafe_recommendations": 33,
+  "production_releases": 0,
+  "unknown_cases": 0,
+  "gates": {
+    "action_accuracy": false,
+    "all300": true,
+    "localization_f1": true,
+    "max4steps": true,
+    "nuisance_reduction": true,
+    "p95_and_size": true,
+    "repeat_hash": true,
+    "zero_critical_unsafe_recommendation": false,
+    "zero_production_release": true
+  },
+  "breakdown": {
+    "family": {
+      "editor": {
+        "action_correct": 56,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 11
+      },
+      "kanban": {
+        "action_correct": 56,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 11
+      },
+      "table": {
+        "action_correct": 56,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 11
+      }
+    },
+    "kind": {
+      "capture_blur": {
+        "action_correct": 0,
+        "count": 33,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "capture_jpeg": {
+        "action_correct": 0,
+        "count": 33,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "capture_translation": {
+        "action_correct": 34,
+        "count": 34,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "critical_warning_icon_deleted": {
+        "action_correct": 0,
+        "count": 33,
+        "unknown": 0,
+        "unsafe_recommendations": 33
+      },
+      "large_deploy_control_deleted": {
+        "action_correct": 34,
+        "count": 34,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "local_status_color": {
+        "action_correct": 100,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "small_deploy_control_deleted": {
+        "action_correct": 0,
+        "count": 33,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      }
+    },
+    "stratum": {
+      "clean_or_nuisance": {
+        "action_correct": 34,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      },
+      "critical_regression": {
+        "action_correct": 34,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 33
+      },
+      "minor_regression": {
+        "action_correct": 100,
+        "count": 100,
+        "unknown": 0,
+        "unsafe_recommendations": 0
+      }
+    }
+  },
+  "wall_seconds": 294.873992719,
+  "prediction_process": {
+    "exit_code": 0,
+    "wall_seconds": 168.408437876
+  },
+  "prediction_files_committed_before_label_open": true,
+  "prediction_commitment_sha256": "312939218f1556ffe4f945bab0646feb05d1c013cbbd514c36105b994c6ca4fe",
+  "source_unchanged": true,
+  "native_job_id": 112058666371,
+  "native_run_conclusion": "success_not_quality_pass",
+  "native_receipt_sha256": "68916401ca7e33649e8f2a13bc6df834e063ff739e55c4222dc4f3779e9f04f1",
+  "raw_log_bytes": 135145,
+  "raw_log_sha256": "fc356ce7ce5eae4fb0e7e8bdea324c4630469ddbb540566a813e17f6e224c712",
+  "independent_percase_aggregate_readback_sha256": "83d813a7cd139eae202020e9d224913b9b1f950b0d9c9438db5fa84e46f76748",
+  "all300rows_source_and_breakdowns_recomputed_without_vision_rerun": true,
+  "known_family_same_author_procedural_label_isolation_not_external_blind": true,
+  "input_images_actual_predictions_labels_trace_bytes_remain_runner": true,
+  "workflow_id": 375944245,
+  "workflow_state_verified": "disabled_manually",
+  "no_post_outcome_threshold_seed_or_badcase_removal": true,
+  "decision": "BLOCK_CLOUD_AND_AUTORELEASE:action168of300<.90;33critical warning-icon deletions receiveunsafe recommendation. Production0 is sandboxdefault, not trustworthy safety proof. Localization1.0 doesnotwaive faileddecision/safety.",
+  "next_mechanism_hypothesis": "Declared baseline critical-component roles/regions independent of perturbation label, plus capture-stability evaluation before recommendation; not area-threshold tuning. Requires separate frozen validation after this consumedset.",
+  "official_score": null,
+  "award": null,
+  "aws_deployed": false,
+  "registered_or_submitted": false,
+  "new_paid_service_or_commitment_cny": 0
+}
